@@ -1,0 +1,313 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.title-ai {
+    font-weight: 500;
+    font-size: 4.5em;
+    margin-top: 20px;
+}
+
+.line-Ai {
+    width: 50px;
+    height: 5px;
+    background: #cb003c;
+    border-radius: 20%;
+    margin-top: 10px;
+}
+
+.style-image-ai {
+    width: 100%;
+    height: 50%;
+}
+.conte-ai {
+  display: flex; 
+ margin-top: 25px;
+}
+.bloc1-ai {
+  width: 372px;
+  height: 450px;
+  margin-top: 50px;
+}
+
+.card-ai {
+    position: relative; /* Nécessaire pour les animations ou pseudo-éléments */
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    border: 2px solid transparent; /* Bordure initialement invisible */
+    background: #f3f4f6; /* Couleur de fond */
+    transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.5s ease-in-out; /* Animation bordure */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.card-ai:hover {
+    border-radius: 20px; /*Arrondir les coins*/
+    border-color: #cb003c; /* Change la couleur de la bordure */
+    box-shadow: 0 8px 15px rgba(203, 0, 60, 0.3); /* Ombre plus visible */
+    transform: scale(1.1);
+}
+
+/* Pour gérer l'image */
+.style-image-ai {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* Coins arrondis de l'image */
+    transition: transform 0.3s ease; /* Animation au survol */
+}
+.style-image-ai {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 20px; /* Coins arrondis de l'image */
+    transition: transform 0.3s ease; /* Animation au survol */
+}
+
+.bloc1-ai:hover .style-image-ai {
+    transform: scale(1.05); /* Agrandit légèrement l'image au survol */
+} 
+
+
+.text-ai {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.btn-ai {
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
+    background: #cb003c;
+}
+.btn-ai:hover {
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
+    color: white;
+    background: #cb003c;
+}
+
+p {
+    color: #5c5c5c;
+}
+
+/* section two for multi bloc icon */
+
+.title-bloc2-ai {
+    font-weight: 500;
+    margin-left: 100px;
+}
+
+.cl-text-ai {
+    color: #cb003c; 
+}
+
+.bolc-svg-ai {
+    width: 320px;
+    height: 350px;
+    margin-left: 17px;
+    background: #f3f4f6;
+    border-top-right-radius: 20%; 
+}
+
+.svg-ai {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+}
+
+.container-ai-bg {
+    width: 100%;
+    height: auto;
+    background: url(../img/opigion-img-bg2.jpg) no-repeat center/cover;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 5rem;
+}
+
+h3 {
+    font-size: 2.8em;
+}
+
+p.p-ai {
+    width: 100%;
+    height: auto;
+    color: #030303;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media (max-width: 576px) {
+    .container-form {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    
+    .title-ai {
+      font-weight: 500;
+      font-size: 6em;
+  }
+  .conte-ai{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+  }
+
+}
+
+@media (max-width: 768px) {
+    .container-form {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+    
+    .title-ai {
+      font-weight: 500;
+      font-size: 4em;
+  }
+  .conte-ai{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+    .container-form {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    .title-ai {
+      font-weight: 500;
+      font-size: 4em;
+  }
+  .conte-ai{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1200px) {
+    .container-form {
+        display: flex;
+        justify-content: center;
+    }
+
+    h3 {
+        font-size: 1.8em;
+    }
+    .title-ai {
+      font-weight: 500;
+      font-size: 4em;
+  }
+
+    p.p-ai {
+        width: 100%;
+        height: auto;
+        margin-left: 2rem;
+    }
+    .conte-ai{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .conte-ai{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+}
+
+/* create formulaire for ai-magination */
+
+.login-container {
+    /* padding: 20px; */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.login-container .form-ai {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* padding-right: 30px; */
+}
+
+.illustration img {
+    max-width: 100%;
+}
+.login-container .form-control {
+    border-radius: 8px;
+    border: 2px solid #5c5c5c;
+    resize: none;
+    text-align: center;
+}
+.login-container .btn-primary {
+    width: 50%;
+    border-radius: 8px;
+    background-color: #cb003c;
+    border: none;
+    margin: 0 auto;
+    outline: none;
+}
+.login-container .forgot-password,
+.login-container .create-account {
+    font-size: 1.1em;
+    color: #5c5c5c;
+}
+
+.custom-input {
+    padding: 2px;
+    border-radius: 8px;
+}
+
+.custom-input input {
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-control .custom-input .error { 
+    font-size: 1.2em;
+    font-weight:  600;
+    text-align: center;
+}
+
+.textArea-ai-h{
+    height: 200px;
+}
+
+#mValid { 
+    color: green;
+    font-size: 1.2em;
+    font-weight:  600;
+    text-align: center;
+}

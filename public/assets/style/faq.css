@@ -1,0 +1,125 @@
+.cont-title-quest-ai{  
+    margin: 0 auto;
+    width: 85%; 
+    height: auto; 
+    border: 2px solid black;
+}
+
+
+
+
+.faq-container { 
+    width: 88%;
+    margin: 50px auto;
+    padding: 28px; 
+    border-radius: 8px; 
+    font-family:'poppins medium', serif;
+}
+
+h1.faq-title {
+    text-align: center;
+    font-size: 55px;
+    color:  #000;
+    margin-bottom: 20px; 
+    font-family:'poppins medium', serif;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+    width: 100%;
+    height: 100%;
+    padding: 15px; 
+    color: #000000;
+    font-size: 18px;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 5px;
+    background:  #f7f7f773;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+    border: 2px solid #000000 ;
+    padding: 30px; 
+}
+
+.faq-question:hover{
+    color: #ff7ca3bb;
+}
+ 
+.faq-question .icon {
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.faq-answer {
+    padding: 15px;
+    background-color: #f1f1f1;
+    display: none;
+    border-left: 4px solid #cb003c;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+    margin-top: 10px;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.faq-question.active + .faq-answer {
+    display: block;
+    max-height: 200px; 
+}
+
+.faq-question.active .icon {
+    transform: rotate(180deg); 
+}  
+
+.faq-answer {
+    transition: max-height 0.5s ease;
+}
+.icon img {
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    max-height: 0; 
+    overflow: hidden; 
+    padding: 0 15px; 
+    background-color: #f1f1f1;
+    border-left: 4px solid #cb003c;
+    border-radius: 0 0 5px 5px;
+    margin-top: 10px;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.faq-question.active + .faq-answer {
+    max-height: 300px; 
+    padding: 15px; 
+}
+
+
+
+
+/* Responsive design: ajustements pour les écrans plus petits */
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+ 

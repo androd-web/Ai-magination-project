@@ -1,0 +1,57 @@
+/* section hereos */
+.cls-1 {
+    fill: #2d6cf6;
+}
+.cls-2 {
+    fill: #9cdff1;
+}
+.cls-3 {
+    fill: #57ba7f;
+}
+.cls-4 {
+    fill: #b066e2;
+}
+.cls-5 {
+    fill: #e0e0dc;
+}
+.cls-6 {
+    fill: #153ca2;
+}
+.cls-7 {
+    fill: #e56075;
+}
+.cls-8 {
+    fill: #a66be1;
+}
+.cls-9 {
+    fill: #ff7e70;
+}
+.cls-10 {
+    fill: #77aac1;
+}
+.cls-11 {
+    fill: #0074ab;
+}
+.cls-12 {
+    fill: #e3f3f3;
+}
+.cls-13 {
+    fill: #ede0f8;
+}
+.cls-14 {
+    fill: #f4f4fd;
+}
+/* end of section hereos */
+
+
+/* slider */
+.caroussel-item-1 {
+    background: url("../img/pexels-kindel-media-7148995.jpg") top/cover no-repeat;
+}
+.caroussel-item-2 {
+    background: url("../img/pexels-nicolette-attree-3569890.jpg") top/cover no-repeat;
+}
+.caroussel-item-3 {
+    background: url("../img/pexels-olly-3756679.jpg") top/cover no-repeat;
+}
+/* end of slider */

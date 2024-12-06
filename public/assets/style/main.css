@@ -1,0 +1,328 @@
+/*===================================
+= Notes :                           =
+= ---                               =
+= > les variables, classe d'AI      =
+=  MAGINATION se terminent avec AI; =
+= > pour les variables couleur,     =
+= 10 = 100% et 5 = 50%;             =
+===================================*/
+
+/* ========= main color ========= */
+:root {
+  --c-red-10-AI: #c7013c;
+  --c-red-5-AI: #c7013c77;
+  --c-black-10-AI: #373737;
+  --c-black-3-AI: #fcfcfc;
+  --c-black-5-AI: #37373777;
+}
+
+.bg-red-AI {background-color: #c7013c !important;}
+.text-red-AI {color: #c7013c !important;}
+/* ========= end main color ========= */
+
+/* ========== font family ========== */
+@font-face {
+    font-family: "poppins black";
+    src: url("../font/Poppins-Black.ttf");
+}
+@font-face {
+    font-family: "poppins semi bold";
+    src: url("../font/Poppins-SemiBold.ttf");
+}
+@font-face {
+    font-family: "poppins medium";
+    src: url("../font/Poppins-Medium.ttf");
+}
+@font-face {
+    font-family: "poppins light";
+    src: url("../font/Poppins-Light.ttf");
+}
+@font-face {
+    font-family: "poppins thin";
+    src: url("../font/Poppins-Thin.ttf");
+}
+
+.ff-black-AI {
+    font-family: "poppins black";
+}
+.ff-bold-AI {
+    font-family: "poppins semi bold";
+}
+.ff-medium-AI {
+    font-family: "poppins medium";
+}
+.ff-light-AI {
+    font-family: "poppins light";
+}
+.ff-thin-AI {
+    font-family: "poppins thin";
+}
+
+/* ============ initialition texte property start============ */
+
+h1{
+  font-family: "poppins semi bold" ;
+}
+
+h2,h3,h4,h5{
+  font-family: "poppins medium" ;
+}
+
+p{
+  font-family: "poppins light" ;
+}
+
+/* ============ initialition texte property end============ */
+
+
+/* ========== end of font ========== */
+
+/* ====== font size ====== */
+.x-small-AI {
+  font-size: x-small !important;
+}
+@media (min-width: 576px) {
+  .fs-normal-AI {
+    font-size: 16px !important;
+  }
+}
+/* ====== end font size ====== */
+
+/* ====== link (a) ====== */
+
+header{ 
+  padding-top: 55px;
+}
+.nav-header-AI li {
+  list-style: none;
+  display: block; 
+}
+
+.active-page-AI {
+  background: var(--c-red-10-AI);
+}
+a {
+  text-decoration: none;
+  color: #c7013c; 
+}
+.nav-header-AI li a.link-color-AI {
+   position: relative;
+  color: #c7013c ;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+
+a.link-color-AI:before {
+   content: '';
+   position: absolute;
+   top: 90%; 
+   width: 0;
+   height: 3px;
+   background-color: #c7013c;
+   transition: all ease 0.5s;   
+   z-index: 10;
+ }
+
+a.link-color-AI:hover::before {
+   width: 35%;   
+ } 
+
+.link-AI {
+  color: var(--c-red-10-AI);
+  text-decoration: underline;
+}
+/* ====== end of link (a) ====== */
+
+/* ==== logo header ==== */
+@media (min-width: 768px) {
+  .logo-header-AI {
+    height: 30px;
+  }
+}
+@media (min-width: 994px) {
+  .logo-header-AI {
+    height: 40px;
+  }
+}
+/* ==== end of logo header ==== */
+
+/* ======== menu ======== */
+@media (max-width: 767px) {
+  .nav-header-AI {
+    opacity: 0;
+  }
+}
+/* --- nav active js --- */
+.nav-active-js-AI {
+  display: block !important;
+  position: fixed;
+  top: 0;
+  right: calc((var(--bs-gutter-x) * 0.5) * -1);
+  height: 100dvh;
+  width: 60dvw;
+  background: #333333;
+  border-left: 2px solid var(--c-red-10-AI);
+  z-index: 9998;
+  animation: opacity 0.3s linear forwards;
+}
+@keyframes opacity {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.nav-active-js-AI::before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  translate: -60vw;
+  background: #333333ee;
+  z-index: -2;
+}
+/* --- end of nav active js --- */
+
+
+/* --- btn menu --- */
+.btn-menu-AI {display: none;}
+
+@media (max-width: 767px) {
+  .btn-menu-AI {
+    display: block;
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    padding: 4px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    top: 15px;
+    right: 10%;
+    translate: 0 -25%;
+    z-index: 9999;
+    transition: background 0.3s;
+  }
+  .btn-menu-AI:hover {
+    background: #c7013c29;
+  }
+}
+
+/* --- lines --- */
+.btn-menu__line-AI {
+  display: block;
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  background: #000;
+  pointer-events: none;
+}
+/* js */
+.line-active-js-AI {
+  background-color: white;
+}
+
+.l-1-AI {
+  translate: 0 2.5px;
+}
+.l-2-AI {
+  translate: 0 -2.5px;
+  width: 40%;
+}
+/* --- end of lines --- */
+/* --- end of btn menu --- */
+
+/* ======== end of menu ======== */
+
+/* =======
+= footer =
+======= */
+
+/* ===== icon social ===== */
+.link-social-AI {
+    height: 25px;
+    width: 25px;
+    fill: var(--c-black-5-AI);
+    transition: fill 0.3s;
+}
+.link-social-AI:hover {
+    fill: var(--c-black-10-AI);
+}
+/* ===== end of icon social ===== */
+
+ 
+/* button3D debut du code */
+.button3D {
+  position: absolute; 
+  width: 160px;
+  height: 40px; 
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transform-origin: center center;  
+    text-transform: uppercase; 
+}
+
+.front,
+.back,
+.center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  padding-inline: 10px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  background: rgba(27, 27, 27, 0.05);
+  transform-style: preserve-3d;
+  border-radius: 5px;
+  backface-visibility: hidden; 
+  color: #fff;
+  transition: 1s;
+}
+
+span.front {
+  transform: rotateX(0deg) translateZ(20px);
+}
+
+.button3D:hover span.front {
+  transform: rotateX(-180deg) translateZ(20px);
+}
+
+span.back {
+  transform: rotateX(180deg) translateZ(20px);
+}
+
+.button3D:hover span.back {
+  transform: rotateX(0deg) translateZ(20px);
+}
+
+span.center {
+  background: var(--c-red-10-AI) ;
+}
+
+span.center::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:   var(--c-red-10-AI) ;
+  border-radius: 5px;
+  transform: translateZ(-1px);
+}
+
+.button3D:hover span.center {
+  transform: rotateX(-180deg);
+}
+
+/* button3D fin du code */
+
+/* ==============
+= end of footer =
+============== */

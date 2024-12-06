@@ -1,0 +1,62 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+ 
+/* Masquer la section principale au départ */
+.body-visible-ai {
+    display: none;
+    text-align: center;
+    padding: 20px;
+} 
+
+/* Spinner de chargement */
+ .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #cb003c;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}   
+
+
+
+/* letter loading of Ai-magination anim start  */
+
+
+.bloc{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloc span{
+    font-size: 1.8vw;
+    position: relative;
+    letter-spacing: 5px; 
+    color: #cb003c;
+}
+ 

@@ -1,0 +1,76 @@
+.container-ai{
+  padding-left: 8rem;
+}
+
+.title-ai{
+  font-weight:  500;
+  font-size: 6em;
+  margin-left: 124px;
+}
+
+.line-Ai {
+   width: 50px;
+   height: 5px;
+    background: #cb003c;
+    border-radius: 20%;
+    margin-top: 10px;
+    margin-left: 124px;
+  }
+  
+  .style-image1-ai{
+    width: 360px;
+    height: 250px;
+    background: url(../images/img1.jpg) center/cover;
+    margin-top: 50px;
+
+  }
+
+  .style-image2-ai{
+    width: 360px;
+    height: 250px;
+    background: url(../images/img2.jpg) center/cover;
+    margin-top: 50px;
+  }
+
+  .style-image3-ai{
+    width: 360px;
+    height: 250px;
+    background: url(../images/img3.jpg) center/cover;
+    margin-top: 50px;
+  }
+
+  .conte-ai{
+    margin-left: 100px;
+  }
+
+  .card-ai{
+    width: 360px;
+    height: 250px;
+    padding-top: 35px;
+    padding-left: 20px;
+    border-bottom-right-radius: 20%;
+    background:  #f3f4f6;
+  }
+
+  .text-ai{
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .btn-ai{
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
+    background: #cb003c;
+  }
+  .btn-ai:hover{
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
+    color: white;
+    background: #cb003c;
+  }
+
+  p{
+    color: #5c5c5c;
+  }

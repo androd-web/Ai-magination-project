@@ -1,0 +1,165 @@
+.about-section {
+    /* background-color: #0f1e36; Couleur sombre pour le fond */
+    color: #000000; /* Couleur du texte */
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-btn {
+    background-color: #cb003c;
+    border: none;
+    color: #000000; /* Couleur du texte */
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.about-btn:hover {
+    background-color: #cb003c;
+}
+
+.about-image {
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.digital-age-section {
+    /* background-color: #0f1e36; Fond sombre */
+    color: #000000; /* Couleur du texte */
+
+}
+
+.digital-age-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.digital-age-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.digital-age-image {
+    max-width: 95%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.fundamental-business-section {
+    /* background-color: #0f1e36; Fond sombre */
+    color: #000000; /* Couleur du texte */
+
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #e63946; /* Couleur rouge pour le thème Ai-magination */
+}
+
+.business-card {
+    /* background-color: #112b48; */
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    color: #000000; /* Couleur du texte */
+
+}
+
+.business-card .icon {
+    font-size: 3rem;
+    color: #e63946;
+    margin-bottom: 1rem;
+}
+
+.business-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.business-description {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.awards i {
+    font-size: 2rem;
+    color: #e63946;
+    margin: 0 15px;
+}
+
+
+.fundamental-business .card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.fundamental-business .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.prestigious-awards img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+.prestigious-awards img:hover {
+    transform: scale(1.1);
+}
+
+ /* ======================slider debut du code ================================= */
+
+.team-slider {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
+.team-card {
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+.team-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #e94560;
+}
+
+.team-card h4 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    color: #dbdbdb;
+}
